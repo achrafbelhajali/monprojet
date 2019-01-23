@@ -1,0 +1,199 @@
+<style>
+    
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        .button {background-color: #008CBA;
+    border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;}
+          input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+
+        ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+            
+            form,FORM {
+              display: inline;padding: 10px 15px;
+            }
+            ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+ </style>
+  <body>
+    <ul>
+            <li><a  [routerLink]='["/"]' class="active" href="#home">Home</a></li>
+            <li><a [routerLink]='["/#Annonces"]' href="#Annonces">Annonces</a></li>
+           
+            <li><a [routerLink]='["/#about"]'  href="#about">About</a></li>
+            
+            <li><a [routerLink]='["/#annonce"]' href="#annonce">Publier une annonce</a></li>
+            <li><a [routerLink]='["/#Connexion"]'href="#Connexion" >Connexion</a></li>
+            <li><a [routerLink]='["/#Identification"]' href="#Identification">Identification</a></li>
+            <li><a [routerLink]='["/#contact"]' href="#contact">Contact</a></li>
+          </ul>
+    <h1 style="text-align:center;font-size:35px;margin-left:25px;width:100%;padding-left:30px;">  
+    Nos dernières salles de réunion
+    </h1>
+     
+
+
+
+
+
+   
+      
+        
+        
+      <div> 
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image8.jpg">
+              <img src="image8.jpg"  width="600" height="400">
+            </a>
+            <div class="desc"><h3>Université Paris 13</h3>
+              <h4>99 Avenue Jean Baptiste Clément, 93430 Villetaneuse</h4>
+                  <h4> direction-generale-services@univ-paris13.fr</h4>
+                      
+                <h4>+33 (0)1 49 40 30 09</h4></div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image11.png">
+              <img src="image11.png"  width="600" height="400">
+            </a>
+            <div class="desc"><h3>L’École Supérieure du Professorat et de
+                l’Éducation </h3>
+              <h4>10, rue Molitor 75016 Paris</h4>
+                  <h4> christine.gaultier@espe-paris.fr
+                      </h4>
+                <h4>+33 1 40 50 25 03</h4></div>
+            </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image4.png">
+              <img src="image4.png"  width="600" height="400">
+            </a>
+            <div class="desc"><h3>La Maison de la recherche</h3>
+            <h4>28, rue Serpente 75006 Paris</h4>
+                <h4>logistique.serpente@paris-sorbonne.fr</h4>
+              <h4>+33 1 53 10 57 12</h4></div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image5.png">
+              <img src="image5.png"  width="600" height="400">
+            </a>
+            <div class="desc"><h3>L’Institut d’art et d’archéologie</h3>
+              <h4> 3, rue Michelet 75006 Paris</h4>
+                  <h4> karine.vettese@paris-sorbonne.fr</h4>
+                <h4> +33 1 53 73 71 43</h4></div>
+            </div>
+          </div>
+        </div>      
+</body>  

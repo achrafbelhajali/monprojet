@@ -1,0 +1,163 @@
+
+
+
+<style>
+    input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.button {background-color: #008CBA;
+    border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;}
+
+input[type=text]:focus {
+  width: 100%;
+}
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        form,FORM {
+          display: inline;padding: 10px 15px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+        </style>
+
+<ul>
+        <li><a  [routerLink]='["/"]' class="active" href="#home">Home</a></li>
+        <li><a [routerLink]='["/#Annonces"]' href="#Annonces">Annonces</a></li> 
+         <li><a [routerLink]='["/#about"]'  href="#about">About</a></li>
+        
+        <li><a [routerLink]='["/#annonce"]' href="#annonce">Publier une annonce</a></li>
+        <li><a [routerLink]='["/#Connexion"]'href="#Connexion" >Connexion</a></li>
+        <li><a [routerLink]='["/#Identification"]' href="#Identification">Identification</a></li>
+        <li><a [routerLink]='["/#contact"]' href="#contact">Contact</a></li>
+    </ul>
+
+<form>
+        <h3>What would you like to search?</h3>    
+    <input type="text" name="search" placeholder="Search..">
+    <br>
+    <br>
+      </form>
+
+<div id="searchbar" >
+   
+    <form action="" class="formulaire">
+            <FORM>
+                    <label for="fsale">Type de sale:</label> 
+                    <SELECT name="salle" size="1">
+                        <OPTION>Salle de cour<OPTION>Salle de réunion<OPTION>au mois
+                    </SELECT>
+            </FORM>
+        
+        <FORM class="relative">
+                <label for="fplace">Nombre des places:</label>
+                <SELECT name="poste" size="1">
+                            <OPTION>1 Place   <OPTION>2 Place<OPTION>3 Place<OPTION>4 Place<OPTION>5 Place<OPTION>6 Place<OPTION>7 Place<OPTION>8 Place<OPTION>9 Place<OPTION>10 Place                   
+                            <OPTION>11 Place<OPTION>12 Place<OPTION>13 Place<OPTION>14 Place <OPTION>15 Place<OPTION>16 Place<OPTION>17 Place <OPTION>18 Place<OPTION>19 Place<OPTION>20 Place
+                            <OPTION>21 Place<OPTION>22 Place<OPTION>23 Place<OPTION>24 Place <OPTION>25 Place<OPTION>26 Place<OPTION>27 Place <OPTION>28 Place<OPTION>29 Place<OPTION>30 Place                      
+                            <OPTION>31 Place<OPTION>32 Place<OPTION>33 Place<OPTION>34 Place <OPTION>35 Place<OPTION>36 Place<OPTION>37 Place <OPTION>38 Place<OPTION>39 Place<OPTION>40 Place                        
+                            <OPTION>41 Place<OPTION>42 Place<OPTION>43 Place<OPTION>44 Place <OPTION>45 Place<OPTION>46 Place<OPTION>47 Place <OPTION>48 Place<OPTION>49 Place<OPTION>50 Place       
+                </SELECT>
+            </FORM>
+        <FORM>
+                <label for="fplace">Durée:</label>
+                <SELECT name="Dure" size="1">
+                    <OPTION>A l'heure   <OPTION>A la journée<OPTION>au mois
+                </SELECT>
+        </FORM>
+        <FORM >
+                <label for="fplace">Situation géographique:</label>
+                <SELECT name="ville" size="1">
+                    <OPTION>Villetaneuse Nord   <OPTION>Bobigny<OPTION>Saint-Denis<OPTION> Argenteuil<OPTION>Saint-Denis La Plaine<OPTION>Villetaneuse Sud
+                </SELECT>
+        </FORM>
+        <h3>Equipements dans les salles:</h3>
+        <input type="checkbox" id="tableau" name="vidéoprojecteur">
+        <label for="scales">vidéoprojecteur</label>
+        <input type="checkbox" id="tableau" name="tableau">
+        <label for="scales">tableau</label>
+        <input type="checkbox" id="tables" name="tables">
+        <label for="tables">vidéoprojecteur</label>
+        <input type="checkbox" id="chaises" name="chaises">
+        <label for="scales">chaises</label>
+        <input type="checkbox" id="canapé" name="canapé">
+        <label for="scales">canapé</label>
+        <input type="checkbox" id="fauteuils" name="fauteuils">
+        <label for="tables">fauteuils</label>
+       
+        <button [routerLink]='["/#Annonces"]' class="button" type="submit">Rechercher</button> 
+
+    </form>
+<div>
+    
+<div >
+    <br>
+    
+    <!-- BANDEAU DE 3 IMAGES -->
+    <section class="row">
+            <!-- Affichage de la camionette -->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;z-index:1;position:relative;" >
+                <div style="position:relative;width:100%;">
+                    <div style="position:absolute;">
+                        <img class="img-responsive imageClip" src="image1.jpg" width=1280 height=500 >
+                    </div>
+                </div> 
+            </div>       
+                <div style="z-index:2;position:absolute;color:#ffffff;margin-top:80px;width:100%;">
+                    <div style="text-align:center;font-size:35px;margin-left:25px;width:100%;padding-left:30px;"> 
+                        <!--Affichage du texte dans l'image de la camionette -->
+                        <div>Location des salles de cours et de réunion dans l&#39;université.
+
+                        </div>
+                        <div style="font-size:25px;padding-top:50px;margin-left:10px;">Nous vous propose des salles à louer à l’heure ou à la journée, pour tous types d’événements.
+                        </div>
+                    </div>   
+                </div>
+    </section>                    
+                                        
+
+</div>

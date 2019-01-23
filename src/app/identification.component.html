@@ -1,0 +1,129 @@
+<style>
+    
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        .button {background-color: #008CBA;
+    border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;}
+          input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+
+        ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+            
+            form,FORM {
+              display: inline;padding: 10px 15px;
+            }
+            ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+            </style>
+    
+    <ul>
+            <li><a  [routerLink]='["/"]' class="active" href="#home">Home</a></li>
+            <li><a [routerLink]='["/#Annonces"]' href="#Annonces">Annonces</a></li> 
+            <li><a [routerLink]='["/#about"]'  href="#about">About</a></li>
+            
+            <li><a [routerLink]='["/#annonce"]' href="#annonce">Publier une annonce</a></li>
+            <li><a [routerLink]='["/#Connexion"]'href="#Connexion" >Connexion</a></li>
+            <li><a [routerLink]='["/#Identification"]' href="#Identification">Identification</a></li>
+            <li><a [routerLink]='["/#contact"]' href="#contact">Contact</a></li>
+          </ul>
+      
+        <body>
+        
+        
+        
+        <div>
+          <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <label for="email">@ Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="France">France</option>
+              <option value="Autriche">Autriche</option>
+              <option value="Belgique">Belgique</option>
+              <option value="Tunisie">Tunisie</option>
+              <option value="Allemagne">Allemagne</option>
+              <option value="Croatie">Croatie</option>
+              <option value="Espagne">Espagne</option>
+              <option value="Grèce">Grèce</option>
+              <option value="Pologne">Pologne</option>
+              <option value="Slovénie">Slovénie</option>
+              <option value="Suède">Suède</option>
+            </select>
+            <label for="mot de passe">Mot de passe</label><br>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Your Mot de passe.."size="20">
+            <br>
+            <label for="msg">Message </label><br>
+            <textarea id="msg" name="user_message"></textarea><br>
+            <button [routerLink]='["/"]' class="button" type="submit">Valider</button> 
+            <button  [routerLink]='["/"]' class="button" type="submit">Retour</button>
+           <!-- <button class="button" type="submit">Quitter</button> -->
+          </form>
+        </div>
+        
